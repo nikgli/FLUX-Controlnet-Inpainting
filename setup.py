@@ -6,9 +6,7 @@ setup(
     description="Alimama's Flux ControlNet and Transformer implementation for image generation",
     author="Nikola Gligorovski",
     author_email="gligorovskinikola@gmail.com",
-    packages=["."],  # Use "." since package is in root directory
-    package_dir={"": "."},  # Map root package to current directory
-    # packages=find_packages(),
+    py_modules=["controlnet_flux", "pipeline_flux_controlnet_inpaint", "transformer_flux"],
     install_requires=[
         "torch>=2.0.0",
         "diffusers==0.30.2",
